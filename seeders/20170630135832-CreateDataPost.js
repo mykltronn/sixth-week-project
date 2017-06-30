@@ -2,42 +2,39 @@
 
 module.exports = {
   up: function (queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('user', [
+    return queryInterface.bulkInsert('posts', [
       {
-        username: "Petunia",
-        password: "password",
+        title: "OMG",
+        body: "Petnuia, you have the most beautiful toe-feathers!!",
         createdAt: Date.now(),
         updatedAt: Date.now()
       },
       {
-        username: "Lavergne",
-        password: "password",
+        title: "Squirrels",
+        body: "I don't know if anybody noticed, but the squirrels are back and they've eaten half my breakfast.",
         createdAt: Date.now(),
         updatedAt: Date.now()
       }
       {
-        username: "Mrs. Pibb",
-        password: "password",
+        title: "out of water",
+        body: "If you're the one to finish the water, please refill it...",
         createdAt: Date.now(),
         updatedAt: Date.now()
       },
       {
-        username: "Tabitha",
-        password: "password",
+        title: "squirrels again",
+        body: "I was just minding my own business, taking a dirt bath, and that damn squirrel up and stole my dinner!",
         createdAt: Date.now(),
         updatedAt: Date.now()
       },
       {
-        username: "Henny",
-        password: "password",
+        title: "COMPOST",
+        body: "COMPOST COMPOST COMPOST HERE COMES THE COMPOST RUN AS FAST AS YOU CAN TO GET THE COMPOST",
         createdAt: Date.now(),
         updatedAt: Date.now()
-      },
+      }
 
   ], {});
-
-
-
   },
 
   down: function (queryInterface, Sequelize) {
@@ -48,6 +45,5 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('Person', null, {});
     */
-    return queryInterface.bulkDelete('')
   }
 };

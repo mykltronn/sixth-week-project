@@ -1,3 +1,23 @@
+
+***CURRENT TABLE ARRANGEMENT:
+gabble=# SELECT * FROM users;
+ id | username | password | createdAt | updatedAt
+----+----------+----------+-----------+-----------
+(0 rows)
+
+gabble=# SELECT * FROM posts;
+ id | title | body | createdAt | updatedAt | userId | likeId
+----+-------+------+-----------+-----------+--------+--------
+(0 rows)
+
+gabble=# SELECT * FROM likes;
+ id | tile | createdAt | updatedAt | userId | postId
+----+------+-----------+-----------+--------+--------
+(0 rows)
+
+
+
+
 what are relationships between users, comments, likes, and other things??
 
  things to store in db:
@@ -82,11 +102,46 @@ else{}
 // can I use controllers in any way?
 // -- checkout if something like a rails controller is accessible in JS
 
-// can I get my hands on a ERD builder? (Entity Relationship Diagram)
-//lucid chart!!
 
-// do you start a project by building an ERD?
+
+
+
+
 
 
 
 //
+
+return queryInterface.bulkInsert('Post', [
+  {
+    title: "OMG",
+    body: "Petunia, you have the most beautiful toe-feathers!!",
+    createdAt: Date.now(),
+    updatedAt: Date.now()
+  },
+  {
+    title: "Squirrels",
+    body: "I don't know if anybody noticed, but the squirrels are back and they've eaten half my breakfast.",
+    createdAt: Date.now(),
+    updatedAt: Date.now()
+  },
+  {
+    title: "out of water",
+    body: "If you're the one to finish the water, please refill it...",
+    createdAt: Date.now(),
+    updatedAt: Date.now()
+  },
+  {
+    title: "squirrels again",
+    body: "I was just minding my own business, taking a dirt bath, and that damn squirrel up and stole my dinner!",
+    createdAt: Date.now(),
+    updatedAt: Date.now()
+  },
+  {
+    title: "COMPOST",
+    body: "COMPOST COMPOST COMPOST HERE COMES THE COMPOST RUN AS FAST AS YOU CAN TO GET THE COMPOST",
+    createdAt: Date.now(),
+    updatedAt: Date.now()
+  }
+
+], {});
