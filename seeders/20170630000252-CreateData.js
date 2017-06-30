@@ -35,10 +35,10 @@ module.exports = {
       },
 
   ], {});
-  return queryInterface.bulkInsert('User', [
+  return queryInterface.bulkInsert('Post', [
     {
       title: "OMG",
-      body: "Petnuia, you have the most beautiful feathers on your toes!",
+      body: "Petnuia, you have the most beautiful toe-feathers!!",
       createdAt: Date.now(),
       updatedAt: Date.now()
     },
@@ -49,8 +49,8 @@ module.exports = {
       updatedAt: Date.now()
     }
     {
-      title: "",
-      body: "",
+      title: "out of water",
+      body: "If you're the one to finish the water, please refill it...",
       createdAt: Date.now(),
       updatedAt: Date.now()
     },
@@ -61,8 +61,8 @@ module.exports = {
       updatedAt: Date.now()
     },
     {
-      title: "",
-      body: "",
+      title: "COMPOST",
+      body: "COMPOST COMPOST COMPOST HERE COMES THE COMPOST RUN AS FAST AS YOU CAN TO GET THE COMPOST",
       createdAt: Date.now(),
       updatedAt: Date.now()
     }
@@ -80,5 +80,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('Person', null, {});
     */
+    return queryInterface.bulkDelete('')
   }
 };
